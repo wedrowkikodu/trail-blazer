@@ -2,7 +2,7 @@ package pl.wedrowkikodu.trailblazer.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import pl.wedrowkikodu.trailblazer.model.Trail;
+import pl.wedrowkikodu.trailblazer.model.entity.Trail;
 
 import java.util.Collections;
 import java.util.List;

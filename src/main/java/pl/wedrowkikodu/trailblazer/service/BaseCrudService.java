@@ -8,5 +8,5 @@ public interface BaseCrudService<T> {
     Optional<T> findById(Long id);
     T save(T object);
     T update(Long id, T objectDetails);
-    T delete(Long id);
+    void delete(Long id);
 }

@@ -1,31 +1,31 @@
 package pl.wedrowkikodu.trailblazer.service;
 
 import org.springframework.stereotype.Service;
-import pl.wedrowkikodu.trailblazer.model.entity.Trail;
+import pl.wedrowkikodu.trailblazer.model.entity.TravelLog;
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
-public class TrailServiceImpl implements TrailService {
+public class TravelLogServiceImpl implements TravelLogService {
 
     @Override
-    public List<Trail> findAll() {
+    public List<TravelLog> findAll() {
         return null;
     }
 
     @Override
-    public Optional<Trail> findById(Long id) {
+    public Optional<TravelLog> findById(Long id) {
         return Optional.empty();
     }
 
     @Override
-    public Trail save(Trail object) {
+    public TravelLog save(TravelLog object) {
         return null;
     }
 
     @Override
-    public Trail update(Long id, Trail objectDetails) {
+    public TravelLog update(Long id, TravelLog objectDetails) {
         return null;
     }
 

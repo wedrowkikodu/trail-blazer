@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import pl.wedrowkikodu.trailblazer.model.Traveler;
+import pl.wedrowkikodu.trailblazer.model.entity.Traveler;
 import pl.wedrowkikodu.trailblazer.service.TravelerService;
 
 import java.util.List;
