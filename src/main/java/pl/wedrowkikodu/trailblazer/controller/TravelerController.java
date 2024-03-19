@@ -1,10 +1,10 @@
 package pl.wedrowkikodu.trailblazer.controller;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import pl.wedrowkikodu.trailblazer.exception.ResourceNotFoundException;
 import pl.wedrowkikodu.trailblazer.mapper.TravelerMapper;
 import pl.wedrowkikodu.trailblazer.model.dto.TravelerDto;
 import pl.wedrowkikodu.trailblazer.model.entity.Traveler;
@@ -29,7 +29,7 @@ public class TravelerController {
     @GetMapping("/{id}")
     public ResponseEntity<TravelerDto> getTravelerById(@PathVariable Long id) {
         Traveler traveler = travelerService.findById(id)
-            .orElseThrow(() -> new RuntimeException("Traveler not found with id: " + id));
+            .orElseThrow(() -> new ResourceNotFoundException("Traveler not found with id: " + id));
         return new ResponseEntity<>(travelerMapper.mapToDto(traveler), HttpStatus.OK);
     }
 

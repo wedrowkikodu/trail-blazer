@@ -16,7 +16,7 @@ public class TravelerMapper {
         traveler.setId(dto.id());
         traveler.setName(dto.name());
         traveler.setEmail(dto.email());
-        return new Traveler();
+        return traveler;
     }
 
     public TravelerDto mapToDto(Traveler traveler) {
